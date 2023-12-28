@@ -1,0 +1,331 @@
+:root {
+    --white-clr: #fff;
+    --primary-clr: #1890FF;
+    --primary-light-clr: #40A9FF;
+    --primary-dark-clr: #096DD9;
+    --dark-clr: #6c757d;
+    --btn-offWhite-clr: #BFBFBF;
+    --disabled-clr: #ccc;
+    --txt-dark-clr: #000;
+
+    --transition: all .2s ease-in-out;
+
+    --m-2: 2px;
+    --m-4: 4px;
+    --gap: 8px;
+    --gap-1: 1rem;
+
+    --fnt-size-16: 16px;
+    --fnt-size-14: 14px;
+    --fnt-size-12: 12px;
+
+    --rem-2: 2rem;
+    --rem-1: 1rem;
+
+    /* Button */
+    --btn-radius: 2px;
+    /* Large button */
+    --btn-p-lg: 8px, 16px, 8px, 16px;
+    --btn-lg-w: 80px;
+    --btn-lg-h: 40px;
+    --btn-lg-w-icon: 104px;
+    /* Medium button */
+    --btn-p-md: 5px, 16px, 5px, 16px;
+    --btn-md-w: 74px;
+    --btn-md-h: 32px;
+    --btn-md-w-icon: 98px;
+    /* Small button */
+    --btn-p-sm: 1px, 8px, 1px, 8px;
+    --btn-sm-w: 58px;
+    --btn-sm-h: 24px;
+    --btn-sm-w-icon: 82px;
+
+
+    /* Input */
+    --input-radius: 2px;
+    --input-w: 320px;
+    --input-percent: 100%;
+    /* large Input */
+    --input-lg-p: 8px 12px 8px 12px;
+    --input-lg-h: 40px;
+    /* Medium Input */
+    --input-md-p: 5px 12px 5px 12px;
+    --input-md-h: 32px;
+    /* Small Input */
+    --input-sm-p: 1px 8px 1px 8px;
+    --input-sm-h: 24px;
+}
+
+
+/* Common Classes */
+.f-size-13 {
+    font-size: 13px !important;
+}
+
+.f-size-12 {
+    font-size: 12px !important;
+}
+
+.brdr-primary {
+    border-color: var(--primary-clr) !important;
+}
+
+.bx-shdw {
+    box-shadow: 0 0 4px 0 #1890FF;
+}
+
+.brdr-primary-dark {
+    border-color: var(--primary-dark-clr) !important;
+}
+
+.m-btm {
+    margin-bottom: var(--rem-2);
+}
+
+.m-tp {
+    margin-top: var(--rem-2);
+}
+
+.d-flx {
+    display: flex;
+}
+
+.gap-1 {
+    gap: var(--gap-1);
+}
+
+.jst-btw {
+    justify-content: space-between;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+
+/* Button Styles */
+.btn {
+    border-radius: var(--btn-radius);
+    text-align: center;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: var(--fnt-size-16);
+    line-height: 24px;
+    margin: var(--m-4) var(--m-2);
+    transition: var(--transition);
+}
+
+.btn i {
+    font-size: var(--fnt-size-12);
+    margin-right: 4px;
+}
+
+.btn-lg {
+    padding: var(--btn-p-lg);
+    width: var(--btn-lg-w);
+    height: var(--btn-lg-h);
+}
+
+.btn-lg.btn-icon-lg {
+    width: var(--btn-lg-w-icon);
+}
+
+.btn-md {
+    padding: var(--btn-p-md);
+    width: var(--btn-md-w);
+    height: var(--btn-md-h);
+}
+
+.btn-md.btn-icon-md {
+    width: var(--btn-md-w-icon);
+}
+
+.btn-sm {
+    padding: var(--btn-p-sm);
+    width: var(--btn-sm-w);
+    height: var(--btn-sm-h);
+}
+
+.btn-sm.btn-icon-sm {
+    width: var(--btn-sm-w-icon);
+}
+
+.btn-primary {
+    background-color: var(--primary-clr);
+    color: var(--white-clr);
+    border-color: var(--primary-clr);
+}
+
+.btn-primary:hover {
+    background-color: #0a83f3;
+    border-color: #0a83f3;
+}
+
+.btn-primary-light {
+    background-color: var(--primary-light-clr);
+    color: var(--white-clr);
+    border-color: var(--primary-light-clr);
+}
+
+.btn-primary-light:hover {
+    background-color: #2093f1;
+    border-color: #2093f1;
+}
+
+.btn-primary-dark {
+    background-color: var(--primary-dark-clr);
+    color: var(--white-clr);
+    border-color: var(--primary-dark-clr);
+}
+
+.btn-primary-dark:hover {
+    background-color: #004da1;
+    border-color: #004da1;
+}
+
+.btn-dark-clr {
+    background-color: var(--dark-clr);
+    color: var(--white-clr);
+    border-color: var(--dark-clr);
+}
+
+.btn-dark-clr:hover {
+    background-color: #5c636a;
+    border-color: #5c636a;
+}
+
+.btn-outline {
+    background-color: var(--white-clr);
+}
+
+.btn-outline.btn-primary {
+    color: var(--primary-clr);
+    border-color: var(--primary-clr);
+}
+
+.btn-outline.btn-primary:hover {
+    color: var(--white-clr);
+    background-color: var(--primary-clr);
+}
+
+.btn-outline.btn-primary-light {
+    color: var(--primary-light-clr);
+    border-color: var(--primary-light-clr);
+}
+
+.btn-outline.btn-primary-light:hover {
+    color: var(--white-clr);
+    background-color: var(--primary-light-clr);
+}
+
+.btn-outline.btn-primary-dark {
+    color: var(--primary-dark-clr);
+    border-color: var(--primary-dark-clr);
+}
+
+.btn-outline.btn-primary-dark:hover {
+    color: var(--white-clr);
+    background-color: var(--primary-dark-clr);
+}
+
+.btn-outline.btn-dark-clr {
+    color: var(--dark-clr);
+    border-color: var(--dark-clr);
+}
+
+.btn-outline.btn-dark-clr:hover {
+    color: var(--white-clr);
+    background-color: var(--dark-clr);
+}
+
+.btn-brdr-dash {
+    border-style: dashed;
+}
+
+.btn-brdr-none {
+    border-width: 0px;
+}
+
+.btn-loading {
+    background-color: var(--disabled-clr);
+    color: var(--txt-dark-clr);
+    cursor: not-allowed;
+}
+
+
+/* Input Styles */
+.input-cls {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: var(--input-radius);
+    border-color: #D9D9D9;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: var(--input-w);
+    transition: var(--transition);
+}
+
+.input-cls::placeholder {
+    color: #8C8C8C;
+}
+
+.input-lg {
+    padding: var(--input-lg-p);
+    height: var(--input-lg-h);
+}
+
+.input-md {
+    padding: var(--input-md-p);
+    height: var(--input-md-h);
+}
+
+.input-sm {
+    padding: var(--input-sm-p);
+    height: var(--input-sm-h);
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper i {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #262626;
+    font-size: var(--fnt-size-14);
+}
+
+.input-wrapper.icon-right i {
+    left: unset;
+    right: 12px;
+}
+
+.input-icon-left {
+    padding-left: 34px;
+}
+
+.input-icon-right {
+    padding-right: 34px;
+}
+
+.input-cls:hover {
+    border-color: var(--primary-clr);
+}
+
+.input-cls:focus {
+    border-color: var(--primary-dark-clr);
+}
+
+
+@media only screen and (max-width: 400px) {
+    .input-cls {
+        width: var(--input-percent);
+    }
+}
